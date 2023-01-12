@@ -100,26 +100,28 @@ export default {
     margin: 20px 0;
 }
 
+.menu-bar {
 
-li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 0.5rem;
-    font-size: 13px;
+    li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 0.5rem;
+        font-size: 13px;
 
 
 
 
-    a {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: black;
-        padding: 26px 0;
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            padding: 26px 0;
 
-        &:hover {
-            border-bottom: 2px solid;
-            border-color: $color_blue;
-            color: $color_blue;
+            &:hover {
+                border-bottom: 2px solid;
+                border-color: $color_blue;
+                color: $color_blue;
+            }
         }
     }
 }
