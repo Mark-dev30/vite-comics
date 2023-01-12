@@ -69,7 +69,7 @@ export default {
             <div class="menu-bar">
                 <ul>
                     <li v-for="item in items">
-                        <a href="#">{{ item.label }}</a>
+                        <a href="#" :class="item.active == true ? 'active' : ''">{{ item.label }}</a>
                     </li>
                 </ul>
             </div>
@@ -115,10 +115,16 @@ export default {
             text-transform: uppercase;
             text-decoration: none;
             color: black;
-            padding: 26px 0;
+            padding: 36px 0;
+
+            &.active {
+                border-bottom: 4px solid;
+                border-color: $color_blue;
+                color: $color_blue;
+            }
 
             &:hover {
-                border-bottom: 2px solid;
+                border-bottom: 4px solid;
                 border-color: $color_blue;
                 color: $color_blue;
             }

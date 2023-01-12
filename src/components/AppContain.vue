@@ -134,6 +134,11 @@ export default {
   background-size: cover;
 }
 
+.current-series {
+  position: relative;
+  z-index: 0;
+}
+
 .container-cards {
   width: 100%;
   background-color: #1c1c1c;
