@@ -88,14 +88,17 @@ export default {
 </script>
 <template lang="">
     <main>
-      <div class="jumbotron"></div>
-      <div class="container-cards">
-          <div class="content-cards">
-              <AppCard v-for="(thumb, index) in thumbs" :key="index" :card="thumb"></AppCard> 
-          </div>
-          <div class="content-btn">
-            <button class="more-btn">LOAD MORE</button>
-          </div>
+      <div class="cont-jumbo">
+        <div class="jumbotron"></div>
+        <h4 class="h4-series">CURRENT SERIES</h4>
+        <div class="container-cards">
+            <div class="content-cards">
+                <AppCard v-for="(thumb, index) in thumbs" :key="index" :card="thumb"></AppCard> 
+            </div>
+            <div class="content-btn">
+              <button class="more-btn">LOAD MORE</button>
+            </div>
+        </div>
       </div>
       <div class="container-link">
         <div class="content-link">
@@ -134,9 +137,17 @@ export default {
   background-size: cover;
 }
 
-.current-series {
+.cont-jumbo {
   position: relative;
-  z-index: 0;
+}
+
+.h4-series {
+  padding: 10px;
+  background-color: $color_blue;
+  position: absolute;
+  left: 105px;
+  top: 17.5rem;
+  color: white;
 }
 
 .container-cards {
